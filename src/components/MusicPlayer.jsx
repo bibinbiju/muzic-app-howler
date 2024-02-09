@@ -14,6 +14,7 @@ export default function MusicPlayer() {
     if (currentTrack) {
       let sound = new Howl({
         src: `${APP_ENV.API_TRACK_BASE_URL}${currentTrack?.streamUrl}`,
+        htmls:true
       });
 
       const onSoundPlaying = (p) => {
