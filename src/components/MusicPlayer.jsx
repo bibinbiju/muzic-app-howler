@@ -1,8 +1,8 @@
+import "./musicPlayer.css";
 import React, { useEffect, useRef, useState } from "react";
 import { Howl } from "howler";
 import TrackService from "../apiServices/TrackService";
 import APP_ENV from "../configs/appEnv";
-import "./musicPlayer.css";
 const TRACK_LIMIT = 10;
 export default function MusicPlayer() {
   const [tracks, setTracks] = useState([]);
