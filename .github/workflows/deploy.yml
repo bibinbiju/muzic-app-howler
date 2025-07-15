@@ -31,6 +31,7 @@ jobs:
 
       - name: Create .env file
         run: |
+          echo "PUBLIC_URL=/${{ github.event.repository.name }}/" >> .env
           echo "REACT_APP_API_TRACK_BASE_URL=${{ secrets.REACT_APP_API_TRACK_BASE_URL }}" >> .env
 
       - name: Build project
